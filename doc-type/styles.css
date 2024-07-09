@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 2em;
+	overflow-x: hidden;
+}
+
+.main-html-basic {
+	width: 100%;
+}
+
+.body-html-basic {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1em;
+}
+
+.heading {
+	align-items: start;
+	justify-content: start;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1em;
+}
+
+section {
+	width: 100%;
+	border: 2px solid gray;
+	padding: 1em;
+}
+
+h5 {
+	color: green;
+}
