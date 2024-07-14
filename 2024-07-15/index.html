@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>2024-07-15</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<style>
+			.static {
+				position: static;
+				border: 2px solid black;
+				/* Tidak bisa dikasih position */
+				left: 10px;
+			}
+			.relative {
+				width: fit-content;
+				position: relative;
+				border: 2px solid red;
+				left: 16px;
+			}
+			.absolute {
+				position: absolute;
+				background-color: lightgreen;
+				left: 160px;
+				border: 2px solid green;
+			}
+			.fixed {
+				position: fixed;
+				border: 2px solid purple;
+				bottom: 0;
+			}
+			#content {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+				width: 100%;
+				height: 100%;
+			}
+			#content div {
+				background-color: lightblue;
+			}
+			#content div:nth-child(even) {
+				background-color: grey;
+			}
+			section.grid {
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<p>Position</p>
+			<div>
+				<p class="static">Static</p>
+			</div>
+			<div><p class="relative">Relative</p></div>
+			<div style="position: relative"><p class="absolute">Absolute</p></div>
+			<div><p class="fixed">Fixed</p></div>
+		</section>
+		<section class="media-queries">
+			<p>Media queries</p>
+		</section>
+		<section class="grid">
+			<div id="content">
+				<div class="box1">1</div>
+				<div class="box2">2</div>
+				<div class="box3">3</div>
+				<div class="box4">4</div>
+				<div class="box5">5</div>
+				<div class="box6">6</div>
+				<div class="box7">7</div>
+				<div class="box8">8</div>
+				<div class="box9">9</div>
+			</div>
+		</section>
+	</body>
+</html>
